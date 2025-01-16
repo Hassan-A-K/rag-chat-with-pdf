@@ -92,7 +92,7 @@ async def main(message: cl.Message):
             book_name = source_doc.metadata.get("book", "Unknown Book")
             page_num = source_doc.metadata.get("page", "Unknown Page")
             chunk_id = source_doc.metadata.get("chunk_id", "Unknown Chunk")
-            source_name = f"{book_name} (Page {page_num}"
+            source_name = f"{book_name} (Page {page_num})"
 
             # Append text element with the source name
             text_elements.append(
